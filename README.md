@@ -1,6 +1,9 @@
-## À propos du projet: Dashboard-laravel-tailwindcss-breeze
+![image](https://github.com/user-attachments/assets/6071e46f-ba6b-43ce-a8fd-474f9d32d4d6)## À propos du projet: Dashboard-laravel-tailwindcss-breeze
 
 Ce projet est une application web développée avec le framework Laravel. Il intègre diverses dépendances pour améliorer le développement et les fonctionnalités, notamment Tailwind CSS pour le style, Alpine.js pour les interactions, et Vite pour la gestion des modules.
+
+![01](https://github.com/user-attachments/assets/70db6870-c87c-4659-9ac7-11a898a0c62a)
+![02](https://github.com/user-attachments/assets/b5909782-a983-48f6-9207-00768891de2a)
 
 ## Prérequis
 
