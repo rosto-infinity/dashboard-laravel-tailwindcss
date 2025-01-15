@@ -1,66 +1,97 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## À propos du projet
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Ce projet est une application web développée avec le framework Laravel. Il intègre diverses dépendances pour améliorer le développement et les fonctionnalités, notamment Tailwind CSS pour le style, Alpine.js pour les interactions, et Vite pour la gestion des modules.
 
-## About Laravel
+## Prérequis
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **PHP** : version 8.2 ou supérieure
+- **Composer** : pour la gestion des dépendances PHP
+- **Node.js et npm** : pour la gestion des dépendances JavaScript
+- **Base de données** : MySQL, PostgreSQL ou autre, selon votre configuration
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Installation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Cloner le dépôt** :
 
-## Learning Laravel
+   ```bash
+   git clone https://github.com/rosto-infinity/dashboard-laravel-tailwindcss.git
+   cd dashboard-laravel-tailwindcss
+## Installer les dépendances PHP :
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+composer install
+Installer les dépendances JavaScript :
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+npm install
+Configurer l'environnement :
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Copier le fichier .env.example en .env :
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+cp .env.example .env
+Modifier les paramètres du fichier .env selon votre configuration (base de données, mail, etc.).
 
-## Contributing
+Générer la clé de l'application :
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+php artisan key:generate
+Exécuter les migrations de la base de données :
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+php artisan migrate
+Compiler les assets :
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+En mode développement :
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+npm run dev
+En mode production :
+
+
+npm run build
+Démarrer le serveur de développement :
+
+
+php artisan serve
+L'application sera accessible à l'adresse http://localhost:8000.
+
+Dépendances principales
+Dépendances PHP :
+
+laravel/framework : ^11.31
+laravel/tinker : ^2.9
+Dépendances PHP pour le développement :
+
+fakerphp/faker : ^1.23
+laravel/breeze : ^2.3
+laravel/pail : ^1.1
+laravel/pint : ^1.13
+laravel/sail : ^1.26
+mockery/mockery : ^1.6
+nunomaduro/collision : ^8.1
+phpunit/phpunit : ^11.0.1
+Dépendances JavaScript :
+
+@alpinejs/persist : ^3.12.0
+apexcharts : ^3.36.3
+flatpickr : ^4.6.13
+jsvectormap : ^1.5.1
+Dépendances JavaScript pour le développement :
+
+@tailwindcss/forms : ^0.5.2
+alpinejs : ^3.4.2
+autoprefixer : ^10.4.2
+axios : ^1.7.4
+concurrently : ^9.0.1
+laravel-vite-plugin : ^1.0
+postcss : ^8.4.31
+vite : ^6.0
+@babel/core : ^7.16.12
+@babel/preset-env : ^7.16.11
+babel-plugin-prismjs : ^2.1.0
+css-loader : ^6.5.1
+file-loader : ^6.2.0
+glob : ^7.2.0
+html-loader : ^3.1.0
+html-webpack-plugin : ^5.5.0
