@@ -1,7 +1,10 @@
+import "flatpickr/dist/flatpickr.min.css";
+import "jsvectormap/dist/css/jsvectormap.css";
+import "../css/satoshi.css";
+import "../css/style.css";
 
-
-import Alpine from "alpinejs";
 import persist from "@alpinejs/persist";
+import Alpine from "alpinejs";
 import flatpickr from "flatpickr";
 import chart01 from "./components/chart-01";
 import chart02 from "./components/chart-02";

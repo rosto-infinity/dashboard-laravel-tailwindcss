@@ -12,7 +12,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css','resources/css/style.css','resources/css/satoshi.css', 'resources/js/app.js','resources/js/js/index.js'])
     </head>
     <body class="font-sans antialiased"
     x-data="{ page: 'ecommerce', 'loaded': true, 'darkMode': true, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
@@ -22,7 +22,7 @@
     :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}"
   >
 
-  
+
   <!-- ===== Preloader Start ===== -->
   <include src="./partials/preloader.html"></include>
   <!-- ===== Preloader End ===== -->
