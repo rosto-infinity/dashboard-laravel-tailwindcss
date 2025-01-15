@@ -16,43 +16,40 @@ Ce projet est une application web développée avec le framework Laravel. Il int
    ```bash
    git clone https://github.com/rosto-infinity/dashboard-laravel-tailwindcss.git
    cd dashboard-laravel-tailwindcss
-## Installer les dépendances PHP :
 
+2. **Installer les dépendances PHP** :
+   ```bash
+    composer install
+    Installer les dépendances JavaScript :
 
-composer install
-Installer les dépendances JavaScript :
-
-
-npm install
-Configurer l'environnement :
-
-Copier le fichier .env.example en .env :
-
-
+3. **Copier le fichier .env.example en .env** :
+ 
 cp .env.example .env
 Modifier les paramètres du fichier .env selon votre configuration (base de données, mail, etc.).
 
-Générer la clé de l'application :
+
+4. **Générer la clé de l'application :** :
+
+ ```bash
+   php artisan key:generate
+
+5. **Exécuter les migrations de la base de données **
 
 
-php artisan key:generate
-Exécuter les migrations de la base de données :
-
-
+ ```bash
 php artisan migrate
 Compiler les assets :
 
 En mode développement :
 
-
+ ```bash
 npm run dev
 En mode production :
 
 
-npm run build
 Démarrer le serveur de développement :
 
-
+ ```bash
 php artisan serve
 L'application sera accessible à l'adresse http://localhost:8000.
 
