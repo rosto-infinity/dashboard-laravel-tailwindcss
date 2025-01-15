@@ -1,4 +1,4 @@
-## À propos du projet
+## À propos du projet: Dashboard-laravel-tailwindcss-breeze
 
 Ce projet est une application web développée avec le framework Laravel. Il intègre diverses dépendances pour améliorer le développement et les fonctionnalités, notamment Tailwind CSS pour le style, Alpine.js pour les interactions, et Vite pour la gestion des modules.
 
