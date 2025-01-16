@@ -25,13 +25,13 @@ Ce projet est une application web développée avec le framework Laravel. Il int
 3. **Copier le fichier .env.example en .env** :
  
 cp .env.example .env
-Modifier les paramètres du fichier .env selon votre configuration (base de données, mail, etc.).
 
+ - **Modifier les paramètres du fichier .env selon votre configuration (base de données, mail, etc.).**
 
 4. **Générer la clé de l'application :** :
 
  ```bash
-   php artisan key:generate
+ php artisan key:generate :
 
 5. **Exécuter les migrations de la base de données **
 
